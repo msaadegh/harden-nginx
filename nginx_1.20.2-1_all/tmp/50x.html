@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internal Server Error</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+</head>
+<style>
+  body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+
+  .error-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .error-container svg {
+    width: 256px;
+    max-width: 80vw;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .error-container svg {
+      max-width: 360px;
+      width: auto;
+    }
+  }
+
+  @media all and (min-width: 1024px) {
+    .error-container svg {
+      max-width: 400px;
+      width: auto;
+    }
+  }
+</style>
+<body>
+<div class="error-container">
+Internal Server Error
+</div>
+</body>
+</html>
+

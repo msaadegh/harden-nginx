@@ -1,0 +1,34 @@
+#!/bin/bash
+# file name preinst
+# Pre-install script for nginx. This removes old versions  nginx.
+
+echo "Looking for old versions of nginx ..."
+
+if [ -f "/usr/sbin/nginx" ];then
+    sudo rm -f /usr/sbin/nginx
+    echo "Removed old nginx from /usr/sbin ..."
+fi
+
+if [ -d "/etc/nginx" ];then
+    sudo rm -rf /etc/nginx/
+    echo "Removed old nginx from /etc/nginx ..."
+fi
+
+if [ -f "/var/run/nginx.pid" ];then
+    sudo rm -f /var/run/nginx.pid
+    echo "Removed old nginx PID from /var/run/nginx.pid ..."
+fi
+
+if [ -f "/lib/systemd/system/nginx.service" ];then
+    sudo rm -f /lib/systemd/system/nginx.service
+    echo "Removed old nginx Service ..."
+fi
+
+echo " remove user nginx"
+deluser nginx
+delgroup nginx
+
+# adding user and group nginx 
+echo " Adding user and group nginx "
+groupadd nginx
+useradd nginx -r -g nginx -d /var/cache/nginx -s /sbin/nologin

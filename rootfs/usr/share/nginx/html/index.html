@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hardened Web Server</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+</head>
+<style>
+    body, html{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+
+    .error-container {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .error-container svg {
+        width: 256px;
+        max-width: 80vw;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        .error-container svg {
+            max-width: 360px;
+            width: auto;
+        }
+    }
+
+    @media all and (min-width: 1024px) {
+        .error-container svg {
+            max-width: 400px;
+            width: auto;
+        }
+    }
+</style>
+<body>
+<div class="error-container">
+        <defs>
+            <linearGradient id="linear-gradient" x1="1" y1=".5" x2="0" y2=".5" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#2d23e3"/>
+                <stop offset=".153" stop-color="#4124d4"/>
+                <stop offset=".172" stop-color="#4423d2"/>
+                <stop offset=".208" stop-color="#5927c4"/>
+                <stop offset=".24" stop-color="#6227bf"/>
+                <stop offset=".288" stop-color="#712ab4"/>
+                <stop offset=".33" stop-color="#842ca7"/>
+                <stop offset=".372" stop-color="#922f9c"/>
+                <stop offset=".409" stop-color="#a03291"/>
+                <stop offset=".451" stop-color="#af3685"/>
+                <stop offset=".466" stop-color="#b53484"/>
+                <stop offset=".491" stop-color="#c0387a"/>
+                <stop offset=".522" stop-color="#c93a72"/>
+                <stop offset=".55" stop-color="#cd3e6c"/>
+                <stop offset=".569" stop-color="#d64167"/>
+                <stop offset=".604" stop-color="#db495e"/>
+                <stop offset=".628" stop-color="#df4e55"/>
+                <stop offset=".642" stop-color="#e44d56"/>
+                <stop offset=".694" stop-color="#ec5648"/>
+                <stop offset=".73" stop-color="#f05c42"/>
+                <stop offset=".749" stop-color="#f1613c"/>
+                <stop offset=".779" stop-color="#f46337"/>
+                <stop offset=".805" stop-color="#f76637"/>
+                <stop offset=".819" stop-color="#f86836"/>
+                <stop offset=".844" stop-color="#f96d30"/>
+                <stop offset=".859" stop-color="#f96a30"/>
+                <stop offset=".874" stop-color="#f86c2e"/>
+                <stop offset=".909" stop-color="#fb6d2f"/>
+                <stop offset=".938" stop-color="#fb6d2d"/>
+                <stop offset=".973" stop-color="#fc722a"/>
+                <stop offset="1" stop-color="#fc722a"/>
+            </linearGradient>
+            <style>
+                .cls-11, .cls-4 {
+                    fill: none
+                }
+
+                .cls-4 {
+                    stroke: #ececec
+                }
+
+                .cls-11, .cls-13, .cls-4 {
+                    stroke-linecap: round
+                }
+
+                .cls-11, .cls-4 {
+                    stroke-linejoin: round
+                }
+
+                .cls-13, .cls-9 {
+                    fill: #fff
+                }
+
+                .cls-11, .cls-13, .cls-14 {
+                    stroke: #d9d9d9
+                }
+
+                .cls-11 {
+                    stroke-width: 2px
+                }
+
+                .cls-10 {
+                    fill: #fafafa
+                }
+
+                .cls-14 {
+                    fill: #d9d9d9
+                }
+
+                .cls-17, .cls-18, .cls-19 {
+                    stroke: none
+                }
+
+                .cls-18 {
+                    fill: #e6e6e6
+                }
+
+                .cls-19 {
+                    fill: #ececec
+                }
+            </style>
+        </defs>
+
+</div>
+</body>
+</html>
