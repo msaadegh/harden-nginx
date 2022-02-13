@@ -42,4 +42,4 @@ docker build -t harden-nginx .
 
 *Recommendation*
 
-*If you have any recomendation, I would appreciate it. 
+* If you have any recomendation, I would appreciate it. 
