@@ -1,1 +1,0 @@
-# harden-nginx
