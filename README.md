@@ -13,6 +13,7 @@ You can download the deb file and install it on ubuntu. I have included a docker
 * [Install](#install)
   * [Debian_file](#debian_file)
   * [Docker](#docker)
+  * [Script](#script)
   
 ## Install
 
@@ -43,3 +44,12 @@ docker build -t harden-nginx .
 *Recommendation*
 
 * If you have any recomendation, I would appreciate it. 
+
+### Script
+
+You can run the "install" script to install a harden nginx from source. 
+
+```
+bash install.sh
+```
+
