@@ -3,6 +3,8 @@
 Based on the CIS benchmark, I have prepared a fully hardened Nginx web server.
 You can download the deb file and install it on ubuntu. I have included a docker file for those who want a docker image. All the configurations are included in this repo. You can copy and paste them into your configuration, but installing using a deb file does all the work, including permissions.
 
+**Also you can install the Nginx from source using "install" script.**
+
 *Notes*
 * Nginx version: 1.20.2
 * I have assumed SSL certificates will be offloaded on Firewall UTMs.
