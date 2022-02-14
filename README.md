@@ -1,7 +1,7 @@
 # Harden Nginx Based On CIS Benchmark
 
 I have prepared a fully hardened Nginx web server based on the CIS benchmark.
-You can download the deb file and install it on ubuntu. I have included a docker file for those who want a docker image. all the configurations are included in this repo, you can copy and paste them into your configuration; but installing using deb file does all the work including permissions.
+You can download the deb file and install it on ubuntu. I have included a docker file for those who want a docker image. All the configurations are included in this repo, you can copy and paste them into your configuration, but installing using deb file does all the work including permissions.
 
 *Notes*
 * Nginx version: 1.20.2
