@@ -35,28 +35,28 @@ useradd nginx -r -g nginx -d /var/cache/nginx -s /sbin/nologin
 
 
 # build and install nginx dependencies
-cd /tmp
+cd nginx_1.20.2-1_all/tmp
 tar -zxf pcre-8.45.tar.gz
 cd /pcre-8.45
 ./configure
 make
 sudo make install
 
-cd /tmp
+cd nginx_1.20.2-1_all/tmp
 tar -zxf zlib-1.2.11.tar.gz
 cd /tmp/zlib-1.2.11
 ./configure
 make
 sudo make install
 
-cd /tmp
+cd nginx_1.20.2-1_all/tmp
 tar -zxf openssl-1.1.1g.tar.gz
 cd /tmp/openssl-1.1.1g
 ./Configure linux-x86_64 --prefix=/usr
 make
 sudo make install
 
-cd /tmp
+cd nginx_1.20.2-1_all/tmp
 tar zxf nginx-1.20.2.tar.gz
 cd /tmp/nginx-1.20.2
 
@@ -65,12 +65,12 @@ make
 sudo make install 
 
 # make systemcd service for nginx
-cp -r /tmp/nginx.service /lib/systemd/system/nginx.service
+cp -r nginx_1.20.2-1_all/tmp/nginx.service /lib/systemd/system/nginx.service
 systemctl deamon-reload
 systemctl reload nginx.service
 
 # copy costomized error files 
-cp /tmp/*.html /usr/share/nginx/html/
+cp nginx_1.20.2-1_all/tmp/*.html /usr/share/nginx/html/
 
 # appy security policies
 find /etc/nginx -type d | xargs chmod 750
