@@ -50,6 +50,8 @@ You can run the "install" script to install a harden Nginx from source.
 bash install.sh
 ```
 
+---
 **Final Note**
 
-* If you have any recommendations, I would appreciate it. 
+If you have any recommendations, I would appreciate it. 
+---
